@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: #90C1E8; 
+}
+header {
+    background-image: linear-gradient(to bottom, #B461E8, #9566F2, #6F67DB);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+header > h1 {
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.317);
+}
+
+header > p {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    color: white;
+    max-width: 600px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 90px;
+    margin: auto;
+    margin-bottom: 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.317);
+}
+
+main {
+    background-color: white; 
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+
+article h1 {
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    font-size: 2.2em;
+    color: #ED5EFF;
+    margin-bottom: 20px;
+
+}
+
+article h2 {
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    font-size: 2.2em;
+    color: #9566F2;
+    margin-bottom: 20px;
+
+}
+
+article p {
+    font-size: 19px;
+    text-align: justify;
+    line-height: 1.8em;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+div.cont {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.cont {
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+
+.textesq {
+    flex: 1; 
+    padding: 20px;
+}
+.textdir {
+    flex: 1;
+    padding: 20px;
+    text-align: right;
+}
+
+.infodir {
+    flex: 1; 
+    text-align: right;
+}
+
+.infoesq {
+    flex: 1;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .cont {
+        flex-direction: column;
+    }
+
+    .textdir, .infodir, .textesq, .infoesq  {
+        flex: auto;
+        text-align: center; 
+    }
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 3.5vw;
+    margin-bottom: 30px;
+}
+section.imagem {
+    background-color: rgb(41, 40, 40);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.513);
+    text-shadow: 1px 1px 0px black;
+    font-family: 'Sriracha', cursive;
+}
+section#img01 {
+    background-image: url('flor\ roxa.jpg');
+    background-size: cover;
+}
+
+div#msg > p{
+    text-align: center;
+}
+div#msg > img {
+    display: block;
+    width: 350px;
+    padding: 5px;
+    height: auto;
+    margin: auto;   
+} 
+footer{
+    background-color: #6F67DB;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 5px;
+}
+
+footer a {
+    color: #ED5EFF;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: #C495B2;
+}
